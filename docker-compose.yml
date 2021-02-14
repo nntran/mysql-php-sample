@@ -1,12 +1,12 @@
 version: "2"
 services:
     app:
-        build: ./src
+        build: .
         image: myapp
         ports: 
             - 8090:80
         # volumes:
-        #     - ./src/test/www:/var/www/html/
+        #     - ./www:/var/www/html/
         links:
             - db
         networks:
@@ -21,7 +21,7 @@ services:
         ports: 
             - 3306:3306
         volumes:
-            - ./dump:/docker-entrypoint-initdb.d
+            - ./database:/docker-entrypoint-initdb.d
             - mysqldb:/var/lib/mysql
         networks:
             - default

@@ -1,3 +1,3 @@
 FROM php:7.1.2-apache
 RUN docker-php-ext-install mysqli
-COPY ./test/www/index.php /var/www/html/
+COPY ./www/index.php /var/www/html/
