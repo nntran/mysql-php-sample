@@ -9,7 +9,7 @@
 ### Clone the repository
 
 ```
-git clone https://github.com/nntran/sample-mysql-phpmyadmin.git
+git clone https://github.com/nntran/mysql-php-sample.git
 ````
 
 ### Launch the project
